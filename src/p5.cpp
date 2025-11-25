@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-
+#include <string>
 using namespace std;
 
 
@@ -12,7 +12,14 @@ void towerhanoi (int n, char A, char B, char C) {
 }
 
 int main(){
-    int a;
-    towerhanoi(a, '1', '2', '3');
+    int a,e,f,g;
+    cin >> a;
+    e=1;
+    f=2;
+    g=3;
+    char b=e;
+    char c=f;
+    char d=g;
+    towerhanoi(a, b, c, d);
     return 0;
 }
