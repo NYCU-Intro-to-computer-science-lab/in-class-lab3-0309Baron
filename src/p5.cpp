@@ -17,9 +17,9 @@ int main(){
     e=1;
     f=2;
     g=3;
-    char b=e;
-    char c=f;
-    char d=g;
+    char b='0'+e;
+    char c='0'+f;
+    char d='0'+g;
     towerhanoi(a, b, c, d);
     return 0;
 }
