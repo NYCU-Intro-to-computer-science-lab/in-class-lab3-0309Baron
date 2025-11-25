@@ -8,7 +8,11 @@ int fib(int n){
 }
 
 void printIndent(int depth){
-    for(int i=0;i<depth;i++) cout << "|--";
+    if(depth>0){
+     cout << "|--";
+    return printIndent(depth-1);
+    }
+
 }
 
 void get(int depth,int n){
